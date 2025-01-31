@@ -1,0 +1,80 @@
+body {
+  margin: 0 !important;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.border-line {
+  height: 1px !important;
+  color: white !important;
+  background-color: white !important;
+  border: 2px solid white !important;
+}
+.title-underline {
+  border: 1.5px solid white;
+}
+.carousel_left_arrow_button {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel_right_arrow_button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px), screen and (pointer: coarse) {
+  .loco-container {
+    position: relative !important;
+  }
+  #logo {
+    filter: brightness(0) !important;
+  }
+  .card-description {
+    font-size: 1.3rem !important;
+    font-weight: 300 !important;
+    line-height: normal;
+  }
+  .cart-title {
+    font-size: 1.8rem !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-wrap: unset;
+    line-height: normal;
+  }
+  .home_page_desktop_container {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .card-description {
+    font-size: 1.5vh !important;
+  }
+  .cart-title {
+    font-size: 2vh !important;
+  }
+  .loco-container {
+    position: absolute !important;
+  }
+  .home_page_mobile_container {
+    display: none !important;
+  }
+}
