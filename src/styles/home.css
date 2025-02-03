@@ -1,0 +1,155 @@
+.home-slot-main-container,
+.header-logo-container {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.slot-container {
+  width: auto;
+  display: flex;
+  align-items: stretch;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.slot-content {
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  align-items: center;
+  border-radius: 8px;
+  width: 100%;
+  padding-left: 2.5vw;
+}
+
+.slot-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: start;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 7vh;
+  height: auto;
+}
+
+.title-container {
+  font-size: 1.2vw;
+  color: white;
+  text-align: start;
+}
+
+.underline-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.title-underline {
+  width: 80%;
+  border: 2px solid white;
+}
+
+.slot-description {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  text-align: start;
+  line-height: normal;
+  font-size: 0.8vw;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+  max-width: calc(26vh - 20px);
+}
+#header-logo {
+  width: 100px;
+  padding: 20px 20px 10px 20px;
+}
+
+.carousel_left_arrow_button {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel_right_arrow_button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px), screen and (pointer: coarse) {
+  .home-slot-main-container {
+    display: none;
+  }
+  .logo-container {
+    position: relative !important;
+  }
+  .logo {
+    width: 75px;
+  }
+  .slot-body {
+    width: 70%;
+  }
+  .slot-content {
+    padding: 0px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75vh;
+  }
+  .header-logo-body {
+    background-color: white !important;
+  }
+  #header-logo {
+    filter: brightness(0) !important;
+    width: 85px !important;
+  }
+  .slot-description {
+    font-size: 1rem !important;
+    font-weight: 300 !important;
+  }
+  .title-container {
+    font-size: 1.3rem !important;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .home-slot-main-container {
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-slot-mobile-container {
+    display: none !important;
+  }
+}
